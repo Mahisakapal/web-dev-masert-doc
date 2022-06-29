@@ -1,0 +1,311 @@
+var num1 = 22
+var num2 = "11" 
+let name = "amardip"
+let age = 28
+
+let newname = "     amardip   "
+console.log( Number(num1) + Number(num2) );      // to convert from one data type to unother 
+
+console.log( Number(num1) + Number(num2) );      // to convert from one data type to unother 
+
+
+console.log(name.length);     // get length of the array 
+
+console.log(name[name.length -1]);  // last charcater of the string array 
+
+console.log(name.trim());           // will remove all sapces 
+
+console.log(name.toUpperCase()); // to convert string in upper case 
+
+console.log(name.toLowerCase()); // to convert string in Lower case 
+
+console.log(name.slice(0, 4)); // to it slice the string we can difind starting and ending position of array
+// if we never defind means it consider as 0 to end 
+
+let about = `my name is ${name} and my age is ${age}`			// this make help us to write concatetion in esay way 
+ 
+// here we are just using a telta sign `` and ${variable_name }
+console.log(about);
+
+
+there is totale 7 data type(primitive) in java script 
+string 
+number 
+boolen 
+int 
+bigInt 
+symbolls 
+null
+undefined 
+
+undefined = means we create a variable but never set vaules for it called as undefined
+
+let testname;
+console.log(typeof(testname));
+
+you can't create a undefined with const it only can be achived by let or var 
+
+let testnull = null;	
+console.log(typeof testnull );		// in this will show a data type of object 	but it atchully null 
+
+to create BigInt 
+
+var num = BigInt(12) or you can add numbers in braket with key word of BigInt();
+or 
+var num1 = 12n 		// add n at last or
+
+you can't parfrom math opration on bigInt and number
+
+we have comparisan oprater like 
+
+>, < =, 
+
+=== vs ==
+when we use === it chnage vaule and datatype 
+when we use == it only check the value 
+
+!= not equle to 
+!==	not equle to but this will check the datatype also 
+
+basic if else stetment 
+
+let age = Math.floor(Math.random() * 30);
+
+if (age > 20){
+    console.log("you can enter your at " + age)
+}
+else {
+    console.log("you can't enter your at " + age)
+}
+
+
+this is the fizzbuzz with else if 
+for (i=1; i < 51; i++ ){
+    if (i%3===0 && i%5===0){
+        console.log("fizbuzz")
+    } 
+      else if (i%3==0 ){
+        console.log("fizz")
+    } 
+    else if (i%5==0 ){
+        console.log("buzz")
+    }
+    else{
+        console.log(i)
+    }
+   
+} 
+
+let name = "Amardip"
+console.log(name.slice(1));
+
+let name = "Amardip"
+console.log(name.slice(0 -1));
+
+
+we see for concatnet string we have to do havey lefting so we can use backstik `` and inside that we can call veriable 
+
+`this is ${var_name} and my age is ${age}`
+
+you can't keep const empty 
+
+acthuly null variable showing object this is bug in JS 
+
+
+below are falsy values  means this value come false when we run if condition and pass this value in veriable
+
+false 
+""
+null
+undefined
+0 
+
+ if (false_variable){
+        console.log(" run code")
+    } 
+	else{
+	console.log("false value")
+	}
+	
+	
+we have ternary(conditional) oprater that do same task as if condition but with less code 
+
+let age = value
+
+let drink = condintion ? "valueAssingTovalue" : "if_condition_fale_than_this_value_assing"
+
+--------------
+// this code will set drink value milk if age is less than or equle to 5 or it set coffe 
+
+let age = 8 
+
+let drink = age<=5 ? "milk" : "coffe"
+	
+
+-----------
+
+switch statement 
+
+let variable_name = value
+
+switch(veriableName){
+    case value_to_check:
+        Your_codes
+        break;         
+}
+
+
+-----------
+   
+in below code we check the value of day variable value and then if case value macth the that code block run and break 
+if you never use break then it will run all case 
+
+let day = 5
+
+switch(day){
+
+    case 0:
+        console.log("sunday");
+        break; 
+
+   case 1:
+        console.log("monday");
+        break;       
+
+  case 2:
+        console.log("tusday");
+        break;       
+
+   case 3:
+        console.log("wendasday");
+        break;       
+   case 4:
+        console.log("thusday");
+        break;       
+   case 5:
+        console.log("friday");
+        break;       
+   default:
+        console.log("satarday");
+        break;       
+        
+}
+
+-------
+
+whille loop is the code that check the condintion and run block of code till condintion false
+
+let age = 1
+
+while ( age < 18 ){
+
+   console.log(`you at  ${age} `)
+   age++
+}
+
+in this also we can use match oprater like gt lt, or and 
+
+------------
+for loop 
+
+This is also work like while loop but here we have to give variable then check concatetion and increment value in condintion block 
+
+for (let age =1; age <= 18; age++ ){
+		 console.log(`you at  ${age} `)
+}
+
+in other way you can declear variable out side you just have to give ; at start this is not good practice 
+
+let age =1
+for (; age <= 18; age++ ){
+		 console.log(`you at  ${age} `)
+}
+
+
+and we use brack in any loop to stop or exit code when particuler variable value is meet 
+
+for (age =1; age <= 18; age++ ){	
+	  if (age === 4){
+		  break;
+	  }
+	 console.log(`you at  ${age} `)
+}
+
+
+This will only print till 3 and break a code when variable value is 4 
+
+
+and we use continue to skipp when variable value meet and run block as it is 
+
+for (age =1; age <= 18; age++ ){	
+	  if (age === 4){
+		  continue;
+	  }
+	 console.log(`you at  ${age} `)
+}
+
+it skip 4 and print all other value
+
+-------
+
+do while 
+
+in while we first check condintion then run the code but in do while  we frist time run code the check condintion
+means in while if condintion is false then code never run but if in do while if condintion fale still your code run at list one time 
+
+do {
+	your code 
+}
+while( condition);
+
+------------------
+
+do {
+    console.log(`you at  ${age} `)
+   age++
+}
+while ( age < 18 )
+
+
+---------
+
+array is refrence type in which we store multyple iteam and all this have a it's index we are using [] to declear it 
+
+let fruts = ["apple","mango","banana"]			// use "" only string string for other data we 
+
+console.log(fruts.length);
+console.log(fruts[1]);
+
+and we can have mix data type in single array 
+you can chnage or add iteam in index like this 
+ fruts[2]="new mango"		// if in index 2 any iteam it will chnage if not it will add 
+
+
+ fruts[3]="banana"	
+ 
+Note: array data type is object 
+ 
+if we want to check is iit array or any other iteam with dataype object we can check that by below cmd 
+
+Array.isArray(variable_name)
+
+so we see how we can add new iteam in array by using abbow method but what if we want to add iteam at end of array for that we hav push 
+
+fruts.push("greapes");
+
+same way we have pop which remove the iteam from last 
+fruts.pop() 
+
+
+
+fruts.unshift("lemon")			// to add iteam at the start of index 
+
+fruts.shift("lemon")			// to remove iteam from starting of index
+
+
+Note: push pop is fast then shift unshift
+
+
+
+
+
